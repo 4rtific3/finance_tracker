@@ -13,13 +13,8 @@
   <body>
     <main>
       <%= render "layouts/navbar" %>
-      <div class="container">
-        <% if notice %>
-          <div class="alert alert-success alert-dismissible"><%= notice %><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>
-        <% end %>
-        <% if alert %>
-          <div class="alert alert-danger alert-dismissible"><%= alert %><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>
-        <% end %>
+      <div class="container mt-5">
+        <%= render "layouts/alerts" %>
         <%= yield %>
       </div>
     </main>
