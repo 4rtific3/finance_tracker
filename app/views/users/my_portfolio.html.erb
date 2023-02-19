@@ -19,7 +19,7 @@
 <% if @stock %>
   <div class="card" style="width: 18rem;">
     <div class="card-body">
-      <h5 class="card-title"><strong>Symbol: </strong><%= @stock.ticker %></h5>
+      <h5 class="card-title"><strong>Symbol: </strong><%= @stock.ticker.upcase %></h5>
       <h5 class="card-title"><strong>Name: </strong><%= @stock.name %></h5>
       <h5 class="card-title"><strong>Price: </strong><%= @stock.last_price %></h5>
     </div>
